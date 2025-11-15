@@ -1,0 +1,34 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main   # Ya master (agar tumhari branch master ho)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0.0
+        with:
+          publish-dir: "./build"
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ nfp_DfziKjiwX4FqvhSELDJCLoYMyoP5LrT3dbc1 }}
+          NETLIFY_SITE_ID: ${{ 7ede42f4-ce2a-406a-9701-57b2ca38c1a6 }}
