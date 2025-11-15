@@ -17,7 +17,7 @@ const Checkout = () => {
             <div className="checkout-card mb-4">
               <div className="checkout-card-header bg-gradient-primary text-white px-4 py-3 rounded-top-8 d-flex align-items-center gap-2">
                 <i className="ph ph-user text-xl"></i>
-                <h5 className="mb-0 fw-semibold">Contact Information</h5>
+                <h5 className="mb-0 fw-semibold">Contact Informationn</h5>
               </div>
               <div className="checkout-card-body bg-white shadow-sm p-4 rounded-bottom-8">
                 <div className="row g-3">
