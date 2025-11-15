@@ -27,7 +27,7 @@ const BannerTwo = () => {
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="text-white mb-8">
-                      Complete Office & Printing Solutions
+                      Complete Office & Printing Solutions Daniyaz
                     </h2>
                     <p className="banner-item-two__title bounce text-white">
                       Explore the latest OfficeJet Pro printers designed for
